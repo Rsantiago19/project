@@ -1,7 +1,9 @@
 program hello
 implicit none
+character(40)			:: name
 
-print* 'Hello World'
+read*, name
+print* 'Hello ', trim(name)
 contains
 
 end program hello
